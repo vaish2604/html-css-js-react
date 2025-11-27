@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: darkolivegreen;
+        }
+
+        input{
+            margin: 20px 0px 0px 650px;
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        ::placeholder{
+            color: darkgreen;
+        }
+
+        button{
+            margin: 20px 0px 0px 0px;
+            padding: 8px;
+            border-radius: 8px;
+            color: whitesmoke;
+            background-color: darkolivegreen;
+        }
+
+        ul{
+            margin: 20px 0px 0px 650px;
+            padding: 8px;
+            color: rgb(23, 33, 6);
+            border-radius: 8px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <input type="text" id="todoInput" placeholder="Enter Your Task">
+    <button onclick="addTask()">Add</button>
+    <ul id="todolist">
+
+    </ul>
+    <script src="./todolist.js"></script>
+</body>
+</html>
