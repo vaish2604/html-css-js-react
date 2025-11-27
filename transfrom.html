@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .parent{
+            height: 70px;
+            width: 400px;
+            border: 1px solid;
+            margin-left: 500px;
+            margin-top: 180px;
+            border-radius: 50px;
+            background-color: yellowgreen;
+        }
+        .child{
+            height: 100;
+            width: 100px;
+            border: 1px solid;
+            background-color: red;
+            border-radius: 50px;
+        }
+        .child:hover{
+            transform: translateX(300px);
+            background-color: brown;
+        } */
+
+        img{
+            animation-name: animal;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        #ease{
+            animation-timing-function: ease;
+        }
+
+        #linear{
+            animation-timing-function: linear;
+        }
+
+        #ease-in{
+            animation-timing-function: ease-in;
+        }
+
+        #ease-out{
+            animation-timing-function: ease-out;
+        }
+
+        /* div:hover{
+            transform:scale(-2);
+            transform: translate(200px);
+            transform: translate(-90px);
+
+        } */
+/* 
+        @keyframes animal{
+            0%{
+                transform:translate(0px);
+            }
+            100%{
+                transform: translate(900px);
+            }
+                
+            
+        } */
+
+        @keyframes animal{
+            0%{
+                transform: translateX(0px) scale(1);
+            }
+
+            50%{
+                transform: translateX(900px) scale(1);
+            }
+            51%{
+                transform: translateX(900px) scale(-1);
+            }
+            100%{
+                transform: translateX(0px) scale(-1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>ease</legend>
+        <img src="./Animals Run Cycle Animations.gif" alt="" height="150px" width="200px">
+    </fieldset>
+
+    <fieldset>
+        <legend>linear</legend>
+        <img src="./Animals Run Cycle Animations.gif" alt="" height="150px" width="200px">
+    </fieldset>
+
+    <fieldset>
+        <legend>ease-in</legend>
+        <img src="./Animals Run Cycle Animations.gif" alt="" height="150px" width="200px">
+    </fieldset>
+
+    <fieldset>
+        <legend>ease-out</legend>
+        <img src="./Animals Run Cycle Animations.gif" alt="" height="150px" width="200px">
+    </fieldset>
+    <!-- <div class="parent">
+        <div class="child"></div>
+    </div> -->
+    
+</body>
+</html>
